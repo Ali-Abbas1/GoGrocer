@@ -36,6 +36,7 @@ const Footer = () => {
                   <img
                     src="../../assets/images/google-play.png"
                     className="max-w-[134px] w-full max-h-[40px] h-full"
+                    alt="google-play icon"
                   />
                 </a>
               </div>
