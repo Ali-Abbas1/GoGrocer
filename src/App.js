@@ -10,7 +10,7 @@ import ServingCountries from "./components/ServingCountries";
 function App() {
   return (
     <div className="App">
-     <Navbar sidebar={false}/>
+    <Navbar/> 
      <HeroSection/>
      <BecomePartner/>
      <CitiesNearMe/>

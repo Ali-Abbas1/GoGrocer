@@ -4,12 +4,12 @@ import { footerLinks } from "../utils/Data";
 const Footer = () => {
   return (
     <div className="border-t">
-      <div className="mx-auto container max-w-[1440px] py-20 px-4 lg:px-0">
-        <div className="flex">
-          <div className="flex basis-2/4">
+      <div className="mx-auto container max-w-[1440px] py-10 md:py-20 px-4 md:px-6 xl:px-10">
+        <div className="flex md:flex-row flex-col">
+          <div className="flex md:basis-2/4">
             <div>
               <h2 className="f-u-b text-2xl font-semibold">Go Grocer</h2>
-              <div className="flex space-x-2 mt-40">
+              <div className="flex space-x-2 mt-10 lg:mt-40">
                 <a>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
 
           {/*Footer links*/}
-          <div className="flex basis-1/4">
+          <div className="flex md:basis-1/4 mt-10 md:mt-0">
             <ul>
               {footerLinks.map((items, id) => (
                 <React.Fragment>
@@ -61,7 +61,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="flex basis-1/4">
+          <div className="flex md:basis-1/4 mt-10 md:mt-0">
             <ul>
               {footerLinks.map((items, id) => (
                 <li key={id} className="flex flex-col space-y-4">
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
         {/*Social Links*/}
-        <div className="mt-20 flex justify-between items-center">
+        <div className="mt-14 flex lg:flex-row flex-col lg:justify-between lg:items-center">
           <div className="social-buttons flex space-x-4">
             <a>
               <svg
@@ -124,7 +124,7 @@ const Footer = () => {
             </a>
           </div>
           {/*Privacy Policy*/}
-          <div className="space-x-5">
+          <div className="md:space-x-5 space-y-4 md:space-y-0 flex flex-col md:flex-row text-left mt-9">
             <a className="f-u-m text-sm font-normal cursor-pointer hover:underline">
               Privacy Policy
             </a>
@@ -139,12 +139,12 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex justify-end mt-4">
+        <div className="flex flex-col lg:flex-row lg:justify-end mt-4">
           <p className="f-u-b text-sm">
             This site is protected by reCAPTCHA and the google <span className="hover:undeline cursor-pointer">Privacy policy   </span>
             and Terms of Service apply.
           </p>
-          <p>© 2023 Go Grocer Inc.</p>
+          <p className="mt-2 lg:mt-0">© 2023 Go Grocer Inc.</p>
         </div>
       </div>
     </div>

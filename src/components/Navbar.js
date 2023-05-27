@@ -42,11 +42,11 @@ const sideBarRef = useRef(null)
 // }
 
   return (
-    <div className={`fixed z-10 w-full max-w-full`}>
+    <div className={`fixed z-50 w-full max-w-full`}>
       <div
         className={`${
           navbar ? "bg-white" : "bg-transparent"
-        } w-full h-[100px] max-w-full max-h-full relative z-50 transition duration-250`}
+        } w-full h-[100px] max-w-full max-h-full relative z-20 transition duration-250`}
       >
         <div className={`${isOpen ? 'block' : 'hidden'} sidebar-backdrop bg-black opacity-50 w-screen h-screen absolute z-30`} onClick={()=> {setIsOpen(false)}}/>
         <div ref={sideBarRef} className={`${isOpen ? 'open' : 'close'} sidebar bg-white p-6 flex flex-col justify-between absolute left-[-300px] z-40`}>
@@ -147,10 +147,8 @@ const sideBarRef = useRef(null)
             </div>
           </div>
         </div>
-        <div className="mx-auto container xl:max-w-[1440px] relative  w-full max-w-full flex justify-between items-center">
-          <div
-            className={`w-full max-w-full flex justify-between items-center py-7 absolute top-0 left-0`}
-          >
+        <div className="mx-auto container xl:max-w-[1440px] relative w-full flex justify-between items-center">
+          <div className={`w-full max-w-full flex justify-between items-center py-7 absolute top-0 left-0 px-4 md:px-6 10 `}>
             <div className="logo cursor-pointer flex relative z-30 space-x-8 items-center ">
               {/* Hamburger menu */}
               <svg
@@ -186,7 +184,7 @@ const sideBarRef = useRef(null)
               </svg>
             </div>
             {/*Header Links */}
-            <div className="header-btns relative z-50 flex space-x-4">
+            <div className="header-btns relative z-50 md:flex space-x-4 hidden">
               <div
                 role="button"
                 className="bg-white text-black rounded-[500px] hover:bg-[#CCCCCC] active:bg-[#B3B3B3] flex py-3 px-4 space-x-1 log-in"
