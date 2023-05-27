@@ -2,26 +2,19 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import BecomePartner from "./components/BecomePartner";
-import EverythingYouCrave from "./components/EverythingYouCrave";
-import MixAndMatch from "./components/MixAndMatch";
-import GrowYourBusiness from "./components/GrowYourBusiness";
-import GetGroceries from "./components/GetGroceries";
-import ToDos from "./components/ToDos";
 import Footer from "./components/Footer";
-
+import CitiesNearMe from "./components/CitiesNearMe";
+import ServingCountries from "./components/ServingCountries";
 
 
 function App() {
   return (
     <div className="App">
-     <Navbar/>
+     <Navbar sidebar={false}/>
      <HeroSection/>
      <BecomePartner/>
-     <EverythingYouCrave/>
-     <GrowYourBusiness/>
-     <GetGroceries/>
-     <MixAndMatch/>
-     <ToDos/>
+     <CitiesNearMe/>
+     <ServingCountries/>
      <Footer/>
     </div>
   );

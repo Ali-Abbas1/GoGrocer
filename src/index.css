@@ -1,12 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Uber-Move-Font */
+@font-face {
+  font-family: "Uber-Move-Bold";
+  src: local("UberMoveTextBold") 
+  url("./fonts/UberMoveTextBold.otf") format(".otf");
+}
+
+@font-face {
+  font-family: "Uber-Move-Light";
+  src: local("UberMoveTextLight") 
+  url("./fonts/UberMoveTextLight.otf") format(".otf");
+}
+
+@font-face {
+  font-family: "Uber-Move-Medium";
+  src: local("UberMoveTextMedium") 
+  url("./fonts/UberMoveTextMedium.otf") format(".otf");
+} 
+
+@font-face {
+  font-family: "Uber-Move-Regular";
+  src: local("UberMoveTextRegular") 
+  url("./fonts/UberMoveTextRegular.otf") format(".otf");
+} 
+
+.f-u-b {
+  font-family: "Uber-Move-Bold", sans-serif;
+}
+
+.f-u-l {
+  font-family: "Uber-Move-Light", sans-serif;
+}
+
+.f-u-m {
+  font-family: "Uber-Move-Medium", sans-serif;
+}
+
+.f-u-r {
+  font-family: "Uber-Move-Regular", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
 .heroSection {
-  background-image: url('/public/assets/images/heroSection-bg.jpg');
+  background-image: url('/public/assets/images/heroSection-bg.png');
 }
 
 .getGroceries {
   background-image: url('/public/assets/images/grocery-bg.png')
+}
+
+.log-in {
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-1 {
+  box-shadow: inset 0px -1px 0px #EEEEEE;
+}
+
+.open {
+  max-width: 300px;
+  height: 100vh;
+  transform: translateX(300px);
+  overflow-y: hidden;
+  -webkit-transform: translateX(300px);
+  transition: all;
+  transition-duration: 0.3s;
+}
+.close {
+  transform: translateX(-400px);
+  transition: all;
+  transition-duration:0.3s;
 }
